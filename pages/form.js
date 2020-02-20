@@ -13,7 +13,7 @@ const form = () => {
   const handleSubmit = e => {
     e.preventDefault();
     setFullName(fullNameInput);
-    console.log('fullNameInput')
+    console.log(fullNameInput)
   };
 
   return (
@@ -27,7 +27,7 @@ const form = () => {
             </a>
           </Link>
         </div>
-        <form>
+        <form onSubmit={handleSubmit}>
           <div>
             <label htmlFor="full-name">Please enter your full name</label>
             <input
@@ -43,7 +43,6 @@ const form = () => {
             type="submit"
             className="primary-btn"
             value="Create Card"
-            onSubmit={handleSubmit}
           />
         </form>
       </div>
