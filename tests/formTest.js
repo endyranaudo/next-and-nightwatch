@@ -4,6 +4,7 @@ module.exports = {
   '@tags': ['forms'],
   'Testing forms'(browser) {
     const backBtn = '#back';
+    const submitBtn = '#submit'
     const fullName = 'Endy Ranaudo';
     const fullNameInputSelector = 'input[name="full-name"]';
 
@@ -11,12 +12,15 @@ module.exports = {
     browser
       .url('http://localhost:3000/form')
       .setValue(fullNameInputSelector, fullName)
-      // BACK BTN
-      .click(backBtn)
-      .expect.element('#logo').text.to.contain('GREETING APP')
+
+      // // BACK BTN
+      // // Need to figure out how to keep test DRY
+      // .click(backBtn)
+      // .expect.element('#logo').text.to.contain('GREETING APP')
+
       // NEXT BTN
-      // .click(nextBtn)
-      // .waitForElementVisible('#card')
-      // .assert.containsText('#your-name', 'Endy Ranaudo')
+      .click(submitBtn)
+      .waitForElementVisible('#card')
+      .assert.containsText('#your-name', 'Endy Ranaudo')
   }
 };

@@ -13,7 +13,7 @@ const form = () => {
   const handleSubmit = e => {
     e.preventDefault();
     setFullName(fullNameInput);
-    console.log(fullNameInput)
+    // console.log(fullNameInput)
   };
 
   return (
@@ -39,14 +39,10 @@ const form = () => {
               onChange={handleChange}
             />
           </div>
-          <input
-            type="submit"
-            className="primary-btn"
-            value="Create Card"
-          />
+          <input id="submit" type="submit" className="primary-btn" value="Create Card" />
         </form>
       </div>
-      <Card fullName={fullName} />
+      {fullName != '' ? <Card fullName={fullName} /> : null}
 
       <style jsx>{`
         h1 {
