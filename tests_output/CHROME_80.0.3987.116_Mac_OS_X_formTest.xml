@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites errors="0"
-            failures="0"
+            failures="1"
             tests="1">
 
   <testsuite name="formTest"
-    errors="0" failures="0" hostname="" id="" package="formTest" skipped="0"
-    tests="1" time="1.117" timestamp="">
+    errors="0" failures="1" hostname="" id="" package="formTest" skipped="0"
+    tests="1" time="5.855" timestamp="">
   
-    <testcase name="Testing forms" classname="formTest" time="1.117" assertions="2">
+    <testcase name="Testing forms" classname="formTest" time="5.855" assertions="2">
+
+      <failure message="Testing if element [0;33m&lt;#your-name&gt;[0m contains text [0;33m&#39;Endy Ranaudo&#39;[0m in 5000ms - expected [0;32m&#34;contains text &#39;Endy Ranaudo&#39;&#34;[0m but got: [0;31m&#34;does not contain &#39;Endy Ranaudo&#39;&#34;[0m [0;90m(5235ms)[0m">    at Object.Testing forms (/Users/endyranaudo/Desktop/ReactAndNightwatchBasic/next-and-nightwatch/tests/formTest.js:23:15)
+    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
 
     
-
-    
+      <failure message="    at Object.Testing forms (/Users/endyranaudo/Desktop/ReactAndNightwatchBasic/next-and-nightwatch/tests/formTest.js:23:15)">    at processTicksAndRejections (internal/process/task_queues.js:93:5)</failure>
     </testcase>
   
 

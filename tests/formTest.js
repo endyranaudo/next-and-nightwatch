@@ -19,8 +19,9 @@ module.exports = {
 
       // NEXT BTN
       .click(submitBtn)
-      .waitForElementVisible('#card')
-      .assert.containsText('#your-name', 'Endy Ranaudo');
-    browser.saveScreenshot('tests_output/greeting_app.png');
+      .waitForElementVisible('#card', 2000)
+      .assert.containsText('#your-name', 'Endy Ranaudo')
+      .pause(1000)
+      .saveScreenshot('tests_output/greeting_app.png');
   }
 };

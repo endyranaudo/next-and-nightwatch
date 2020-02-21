@@ -5,9 +5,9 @@
 
   <testsuite name="firstTest"
     errors="0" failures="0" hostname="" id="" package="firstTest" skipped="0"
-    tests="1" time="0.4220" timestamp="">
+    tests="1" time="0.5000" timestamp="">
   
-    <testcase name="My first test" classname="firstTest" time="0.4220" assertions="2">
+    <testcase name="My first test" classname="firstTest" time="0.5000" assertions="2">
 
     
 
@@ -15,20 +15,6 @@
     </testcase>
   
 
-  
-    <system-err>
-      [0;31m  SyntaxError: Unexpected token &#39;.&#39;[0m
-[0;90m      .saveScreenshot(&#39;tests_output/greeting_app.png&#39;);
-      ^
-   
-   SyntaxError: Unexpected token &#39;.&#39;
-       at Module._compile (internal/modules/cjs/loader.js:892:18)
-       at Object.Module._extensions..js (internal/modules/cjs/loader.js:973:10)
-       at Module.load (internal/modules/cjs/loader.js:812:32)
-       at Function.Module._load (internal/modules/cjs/loader.js:724:14)
-       at Module.require (internal/modules/cjs/loader.js:849:19)
-       at require (internal/modules/cjs/helpers.js:74:18)[0m
-    </system-err>
   
 
   
