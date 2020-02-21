@@ -26,5 +26,5 @@ yarn-error.log*
 
 #custom
 node_module
-test_outputs
+tests_outputs
 *.log

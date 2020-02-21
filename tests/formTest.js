@@ -4,10 +4,9 @@ module.exports = {
   '@tags': ['forms'],
   'Testing forms'(browser) {
     const backBtn = '#back';
-    const submitBtn = '#submit'
+    const submitBtn = '#submit';
     const fullName = 'Endy Ranaudo';
     const fullNameInputSelector = 'input[name="full-name"]';
-
 
     browser
       .url('http://localhost:3000/form')
@@ -21,6 +20,7 @@ module.exports = {
       // NEXT BTN
       .click(submitBtn)
       .waitForElementVisible('#card')
-      .assert.containsText('#your-name', 'Endy Ranaudo')
+      .assert.containsText('#your-name', 'Endy Ranaudo');
+    browser.saveScreenshot('tests_output/greeting_app.png');
   }
 };
